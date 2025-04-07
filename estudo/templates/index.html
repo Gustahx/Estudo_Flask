@@ -12,7 +12,10 @@
     </div>
 
     <div>
-        <p>Bem vindo aos meus primeiros passos com Flask</p>
+        <p>Welcome {{context.user}}, to my steps in Flask</p>
+        <p><b>Age: {{context.age}}</b></p>
+        <a href="/new" target="_blank">old form</a>
+        <a href="{{url_for('newpage')}}">Link to New</a>
     </div>
 </body>
 </html>
